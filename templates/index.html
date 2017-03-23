@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dinner winner - what's for dinner tonight?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static', filename='fontawesome/css/font-awesome.min.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static', filename='css/bootstrap-social.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static', filename='css/dinnerwinner.css') }}" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/jquery-1.10.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dinnerwinner.js') }}"></script> 
+  </head>
+  <body>
+  <!-- TOP FIXED HEADER -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container fancy-title">
+      <div class="row" id="header">
+        <div class="col-sm-3">        
+        </div>
+        <div class="col-sm-6">
+        <!--MIDDLE HEADER - LOGO -->
+          <img height="40" src="{{ url_for('static', filename='images/logo.jpg') }}">
+          <h1> <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> <span style="color:#009999">&#8594;</span>become a dish master! <span style="color:#ad0057">&#8592;</span> <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span></h1>
+        </div>
+        <div class="col-sm-3">
+        <!-- RIGHT SIDE OF THE HEADER -->
+          <p align="right">
+            <a class="btn btn-social-icon btn-sm" id="email" href="mailto:dinnerwinner.cfg@gmail.com">
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            </a>
+            <a class="btn btn-social-icon btn-sm btn-twitter" href="http://twitter.com/dinnerwinnercfg">
+              <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social-icon btn-sm btn-facebook" href="http://www.facebook.com/dinnerwinnercfg">
+              <span class="fa fa-facebook"></span>
+            </a>
+            <a class="btn btn-social-icon btn-sm btn-instagram" href="http://www.instagram.com/dinnerwinnercfg">
+              <span class="fa fa-instagram"></span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- initial choose -->
+  <div class="container" id="choose">
+    <p align="center" style="font-size:30px">
+      What's for dinner tonight? <br /><small>Have some ingredients, but few ideas? We are here to help.</small></p>
+    <p align="center" style="font-size:24px">
+      <button class="initial" id="meat-option" onclick="choose()">I don't mind meat! </button>  <button class="initial" id="no-meat" onclick="choose2()">I would prefer no meat! </button>
+    </p>
+  </div>
+<!-- beginning of main body -->
+    <div class="container" id="main">
+    <!--big section with fridge + recipes -->
+      <div class="row">
+        <div class="col-sm-7" id="left-side">
+            <div align="center" id="open" onclick="myFunction()"></div>
+          <div id="ingredients">
+          <div id="meat">
+            <p align="center">
+
+<!--
+
+              <img class="img-circle" src="{{ url_for('static', filename='images/chicken.png') }}" alt="chicken" id="meat1" onclick="send1()" />
+              <img src="{{ url_for('static', filename='images/meat2.jpg') }}" alt="beef" id="meat2" onclick="send2()" /> 
+              <img src="{{ url_for('static', filename='images/meat3.jpg') }}" alt="pork" id="meat3" onclick="send3()" />
+-->
+
+
+
+<form action="/submit" method="post">
+    <div class="cc-selector">
+        <input id="chicken" type="checkbox" name="chicken" value="chicken" onclick="send1()" />
+        <label class="drinkcard-cc chicken" for="chicken"></label>
+        <input id="beef" type="checkbox" name="beef" value="beef" onclick="send2()" />
+        <label class="drinkcard-cc beef" for="beef"></label>
+        <input id="entirelist" type="text" name="entirelist" value="" />
+        <input type="submit" id="submit" value="Submit" />
+    </div>
+</form>
+            </p>
+          </div>
+          <!--
+          <div id="veggies">
+            <p align="center">
+              <img src="{{ url_for('static', filename='images/meat1.jpg') }}" alt="courgette" id="veggie1" onclick="send4()" /> 
+              <img src="{{ url_for('static', filename='images/meat2.jpg') }}" alt="tomato" id="veggie2" onclick="send5()" /> 
+              <img src="{{ url_for('static', filename='images/meat3.jpg') }}" alt="broccoli" id="veggie3" onclick="send6()" />
+            </p>
+          </div>
+          <div id="dairy">
+            <p align="center">
+              <img src="{{ url_for('static', filename='images/meat1.jpg') }}" alt="milk" id="dairy1" onclick="send7()" /> 
+              <img src="{{ url_for('static', filename='images/meat2.jpg') }}" alt="brie" id="dairy2" onclick="send8()" /> 
+              <img src="{{ url_for('static', filename='images/meat3.jpg') }}" alt="yogurt" id="dairy3" onclick="send9()" />
+            </p>
+          </div>
+          -->
+          </div>
+        </div>
+        <!-- RIGHT SIDE: ITEMS CHOSEN AND RECIPES  -->
+        <div class="col-sm-5" id="right-side">
+          <div class="chosen-items">
+          
+            <p id="explanation">Open the fridge with a click! Have a look at the ingredients, and pick the ones you would like to use tonight. We'll do the hard work of finding you a good recipe. </p>
+            </p>
+            <p align="right" id="button-options">
+              <button type="button" id="blahblah" onclick="blahblah()"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> I don't like these choices</button>
+              <button type="button" id="send"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Give me my recipes!</button>
+            </p>
+          </div>
+          <div class="recipes">    
+            <p>Your recipes: </p> 
+          </div>
+        </div>
+      </div> 
+    </div>
+      <!-- section with extras at the bottom -->
+    <!-- end of right side -->
+<!-- beginning of footer -->
+   <footer class="footer fancy-title">
+        <p align="right">
+          <span align="right">&copy; 2017 DINNER WINNER. All rights reserved.</span>
+        </p>
+    </footer>
+<!-- javascript links-->   
+  </body>
+</html>

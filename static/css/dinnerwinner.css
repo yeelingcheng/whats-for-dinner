@@ -1,0 +1,179 @@
+  /* IMAGE THING CSS COPIED */
+        .cc-selector input{
+        margin:0;padding:0;
+        -webkit-appearance:none;
+           -moz-appearance:none;
+                appearance:none;
+    }
+
+    .chicken{
+      background-image:url(https://s-media-cache-ak0.pinimg.com/originals/8d/16/4b/8d164b71d56fa1b1398c38e6e61f28ce.png);}
+    .beef{background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Chicken_cartoon_04.svg/2000px-Chicken_cartoon_04.svg.png);}
+
+    .cc-selector-2 input:active +.drinkcard-cc, .cc-selector input:active +.drinkcard-cc{opacity: .9;}
+    .cc-selector-2 input:checked +.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc{
+        -webkit-filter: none;
+           -moz-filter: none;
+                filter: none;
+    }
+    .drinkcard-cc{
+        cursor:pointer;
+        background-size:contain;
+        background-repeat:no-repeat;
+        display:inline-block;
+        width:100px;height:70px;
+        -webkit-transition: all 100ms ease-in;
+           -moz-transition: all 100ms ease-in;
+                transition: all 100ms ease-in;
+        -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+           -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+                filter: brightness(1.8) grayscale(1) opacity(.7);
+    }
+    .drinkcard-cc:hover{
+        -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+           -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+                filter: brightness(1.2) grayscale(.5) opacity(.9);
+    }
+
+    /* Extras */
+    a:visited{color:#888}
+    a{color:#444;text-decoration:none;}
+    p{margin-bottom:.3em;}
+    * { font-family:monospace; }
+
+/* END IMAGE THING */
+
+    body {
+      background-color: #ff8c1a;
+      color: #ffffff;
+      text-shadow: 1px 1px #444;
+      font-size: 14pt;
+      padding-top: 90px;
+    }
+
+    .row {
+      padding-top: 40px;
+    }
+
+    #choose {
+      min-height: 400px;
+      padding-top: 100px;
+    }
+
+    #main {
+      display: none;
+    }
+
+    #ingredients {
+      display: none;
+    }
+
+    #textarea2 {
+      display: none;
+    }
+
+    #button-options {
+      display: none;
+    }
+
+    .initial {
+      background-color: #ff8c1a;
+      color: #ffffff;
+      text-shadow: 1px 1px #444;
+    }
+
+    #meat-option {
+      border-top: none;
+      border-right: none;
+      border-bottom: none;
+      border-left: 6px solid #ad0057;
+      background-color: #ff8c1a;
+    }
+
+    #no-meat {
+      border-bottom: none;
+      border-top: none;
+      border-left: 6px solid #009999;
+      border-right: none;
+      background-color: #ff8c1a;
+    }
+    
+    .navbar {
+      background-color: #ff8c1a;
+      color: #ffffff;
+      text-shadow: 1px 1px #444;
+      font-size: 16pt;
+    }
+
+    .navbar-fixed-top {
+      float: none;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+    }
+
+    #email {
+      background-color: #00e2e6;
+      border-color: #007d80;
+    }
+
+    .fancy-title {
+      font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    #header {
+      padding-top: 30px;
+    }
+
+    #left-side {
+      padding-top: 80px;
+      background-image: url("{{ url_for('static', filename='/images/fridge-closed.png') }}");
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+      min-height: 500px;
+    }
+
+    #ingredients img {
+      max-height: 45px;
+    }
+
+    #open {
+      color: #444;
+      text-shadow: #445;
+      min-height: 250px;
+    }
+
+    #right-side {
+      padding-top: 20px;
+    }
+
+    .chosen-items {
+      min-height: 200px;
+      padding: 10px;
+    } 
+
+    .recipes {
+      padding: 10px;
+    }
+
+    #blahblah {
+      font-size: small;
+    }
+
+    #send, #blahblah {
+      border-right: none;
+      border-top: none;
+      border-left: none;
+      border-bottom: 1px solid  #444;
+      color: #ffffff;
+      text-shadow: 1px 1px #444;
+      background-color: #ff8c1a;
+    }
+
+    footer {
+      font-size: 14px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+    }
