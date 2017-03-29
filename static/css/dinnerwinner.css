@@ -6,9 +6,8 @@
                 appearance:none;
     }
 
-    .chicken{
-      background-image:url(https://s-media-cache-ak0.pinimg.com/originals/8d/16/4b/8d164b71d56fa1b1398c38e6e61f28ce.png);}
-    .beef{background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Chicken_cartoon_04.svg/2000px-Chicken_cartoon_04.svg.png);}
+    .visa{background-image:url({{ url_for('static', filename='images/chicken.svg') }});}
+    .mastercard{background-image:url({{ url_for('static', filename='images/cow.png') }});}
 
     .cc-selector-2 input:active +.drinkcard-cc, .cc-selector input:active +.drinkcard-cc{opacity: .9;}
     .cc-selector-2 input:checked +.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc{
@@ -127,7 +126,7 @@
 
     #left-side {
       padding-top: 80px;
-      background-image: url("{{ url_for('static', filename='/images/fridge-closed.png') }}");
+      background-image:url({{url_for('static', filename='images/fridgeclosed.png')}});
       background-repeat: no-repeat;
       background-size: 50%;
       background-position: center;

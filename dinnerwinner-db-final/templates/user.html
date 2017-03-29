@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <div class="container" id="personal-page">
+    <table>
+        <tr valign="top">
+            <td></td>
+            <td>
+                <h1>User: {{user.nickname}}</h1>
+              <p>{{ user.followers.count() }} followers | 
+              {% if user.id == g.user.id %}
+                  <a href="">Edit your profile</a>
+              {% elif not g.user.is_following(user) %}
+                  <a href="{{ url_for('follow', nickname=user.nickname) }}">Follow</a>
+              {% else %}
+                  <a href="{{ url_for('unfollow', nickname=user.nickname) }}">Unfollow</a>
+              {% endif %}
+              </p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    {% for post in posts.items %}
+        {% include 'post.html' %}
+    {% endfor %}
+    {% if posts.has_prev %}<a href="{{ url_for('user', nickname=user.nickname, page=posts.prev_num) }}">Later recipes</a>{% else %}Later recipes{% endif %} | 
+    {% if posts.has_next %}<a href="{{ url_for('user', nickname=user.nickname, page=posts.next_num) }}">Earlier recipes</a>{% else %}Earlier recipes{% endif %}
+</div>
+ 
+{% endblock %}

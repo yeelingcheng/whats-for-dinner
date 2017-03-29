@@ -10,25 +10,8 @@ function choose2() {
 }
 
 function myFunction() {
-    document.getElementById("left-side").style.backgroundImage = "url('{{ url_for('static', filename='images/fridge-open.png') }}')";
+    document.getElementById("left-side").style.backgroundImage = url({{url_for('static', filename='images/fridgeopen.png')}});
     document.getElementById("open").style.display="none";
     document.getElementById("ingredients").style.display="block";
     document.getElementById("button-options").style.display="block";
-}
-
-var list=[];
-
-function addItem(p1) {
-	var txt=document.getElementById(p1).value;
-	list.push(txt);
-	var res=document.getElementById("entirelist");
-	res.value=list.toString();
-}
-
-function send1() {
-	addItem("chicken");
-}
-
-function send2() {
-	addItem("beef");
 }

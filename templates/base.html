@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dinner winner - what's for dinner tonight?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static', filename='fontawesome/css/font-awesome.min.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static', filename='css/bootstrap-social.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static', filename='css/dinnerwinner.css') }}" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/dinnerwinner.js') }}"></script> 
+  </head>
+  <body>
+  <!-- TOP FIXED HEADER -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container fancy-title">
+      <div class="row" id="header">
+        <div class="col-sm-3">        
+        </div>
+        <div class="col-sm-6">
+        <!--MIDDLE HEADER - LOGO -->
+          <h1> <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> <span style="color:#009999">&#8594;</span>become a dish master! <span style="color:#ad0057">&#8592;</span> <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span></h1>
+        </div>
+        <div class="col-sm-3">
+        <!-- RIGHT SIDE OF THE HEADER -->
+          <p align="right">
+            <a class="btn btn-social-icon btn-sm" id="email" href="mailto:dinnerwinner.cfg@gmail.com">
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            </a>
+            <a class="btn btn-social-icon btn-sm btn-twitter" href="http://twitter.com/dinnerwinnercfg">
+              <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social-icon btn-sm btn-facebook" href="http://www.facebook.com/dinnerwinnercfg">
+              <span class="fa fa-facebook"></span>
+            </a>
+            <a class="btn btn-social-icon btn-sm btn-instagram" href="http://www.instagram.com/dinnerwinner.cfg">
+              <span class="fa fa-instagram"></span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+{% block content %} {% endblock %}
+
+
+   <footer class="footer fancy-title">
+        <p align="right">
+          <span align="right">&copy; 2017 DINNER WINNER. All rights reserved.</span>
+        </p>
+    </footer>
+<!-- javascript links-->   
+  </body>
+</html>

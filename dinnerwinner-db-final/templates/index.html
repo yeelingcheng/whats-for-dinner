@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+  
+  <!-- initial login -->
+
+  <div id="login" style="padding-top:60px">
+  <!--{% for message in get_flashed_messages() %}
+      <p align="center"><b>Error</b>: {{ message }}</p>
+  {% endfor %}-->
+  {% if current_user.is_authenticated %}
+      <p align="right">Hi, {{ current_user.nickname }}! | <a href="{{ url_for('logout') }}">Logout</a></p>
+  {% else %}
+      <h2 align="center" style="font-size:25px">Login please!</h2>
+      <p align="center"><a href="{{ url_for('oauth_authorize', provider='twitter') }}">Login with Twitter</a></p>
+  {% endif %}
+  </div>
+
+  <!-- initial choose meat/no meat -->
+
+  <div class="container" id="choose">
+    <h1>What's for dinner tonight? <br /><small>Have some ingredients, but few ideas? We are here to help.</small></h1>
+    <p align="center" style="font-size:24px">
+      <button class="green-button" id="meat-option" onclick="choose()">I don't mind meat! </button>  
+      <button class="red-button" id="no-meat" onclick="choose2()">I would prefer no meat! </button>
+    </p>
+  </div>
+ 
+  <!-- beginning of main content -->
+
+  <div class="container" id="main">
+  <div class="row">
+    <div class="col-sm-6" id="left">
+    <form action="/submit" method="post" id="form1">
+        <div class="cc-selector">
+        <div class="row" id="meat">
+            <input id="visa" type="checkbox" name="credit" value="chicken" onclick="adding1()" />
+            <label class="drinkcard-cc visa" for="visa"></label>
+            <input id="mastercard" type="checkbox" name="debit" value="beef" onclick="adding2()" />
+            <label class="drinkcard-cc mastercard" for="mastercard""></label>
+            <input id="lloyds" type="checkbox" name="d" value="pork" onclick="adding3()" />
+            <label class="drinkcard-cc lloyds" for="lloyds""></label>
+        </div>
+        <div class="row">
+            <input id="hsbc" type="checkbox" name="debit" value="broccoli" onclick="adding4()" />
+            <label class="drinkcard-cc hsbc" for="hsbc""></label>
+            <input id="rbs" type="checkbox" name="debit" value="mushroom" onclick="adding5()" />
+            <label class="drinkcard-cc rbs" for="rbs""></label>
+            <input id="cheese" type="checkbox" name="debit" value="pepper" onclick="adding6()" />
+            <label class="drinkcard-cc cheese" for="cheese""></label>
+        </div>
+        <div class="row">
+            <input id="ham" type="checkbox" name="debit" value="cheese" onclick="adding7()" />
+            <label class="drinkcard-cc ham" for="ham""></label>
+            <input id="mayo" type="checkbox" name="d" value="milk" onclick="adding8()" />
+            <label class="drinkcard-cc mayo" for="mayo""></label>
+            <input id="bread" type="checkbox" name="d" value="eggs" onclick="adding9()" />
+            <label class="drinkcard-cc bread" for="bread""></label>
+        </div>
+        </div>
+    </form>
+    </div>
+    <div class="col-sm-6" id="right">
+      <p>Choose a number of ingredients from the list on the left, then click Submit when you are happy with your choices!</p>
+      <div class="row">
+            <input id="totallist" type="text" name="totallist" form="form1" />
+            <button class="green-button" type="button" id="clearout" onclick="clearout()">I don't like these choices</button>
+            <input class="red-button" type="submit" id="submit" value="Submit" form="form1" />
+        </div>
+
+    </div>
+  </div>
+  </div>
+
+{% endblock %}

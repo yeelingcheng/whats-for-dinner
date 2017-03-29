@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+<div class="row">
+
+  <div class="col-sm-6" id="left">
+  <form action="/submit" method="post" id="form1">
+      <div class="cc-selector">
+      <div class="row">
+          <input id="visa" type="checkbox" name="credit" value="chicken" onclick="adding1()" />
+          <label class="drinkcard-cc visa" for="visa"></label>
+          <input id="mastercard" type="checkbox" name="debit" value="beef" onclick="adding2()" />
+          <label class="drinkcard-cc mastercard" for="mastercard""></label>
+          <input id="lloyds" type="checkbox" name="d" value="pork" onclick="adding3()" />
+          <label class="drinkcard-cc lloyds" for="lloyds""></label>
+      </div>
+      <div class="row">
+          <input id="hsbc" type="checkbox" name="debit" value="broccoli" onclick="adding4()" />
+          <label class="drinkcard-cc hsbc" for="hsbc""></label>
+          <input id="rbs" type="checkbox" name="debit" value="mushroom" onclick="adding5()" />
+          <label class="drinkcard-cc rbs" for="rbs""></label>
+          <input id="cheese" type="checkbox" name="debit" value="pepper" onclick="adding6()" />
+          <label class="drinkcard-cc cheese" for="cheese""></label>
+      </div>
+      <div class="row">
+          <input id="ham" type="checkbox" name="debit" value="cheese" onclick="adding7()" />
+          <label class="drinkcard-cc ham" for="ham""></label>
+          <input id="mayo" type="checkbox" name="d" value="milk" onclick="adding8()" />
+          <label class="drinkcard-cc mayo" for="mayo""></label>
+          <input id="bread" type="checkbox" name="d" value="eggs" onclick="adding9()" />
+          <label class="drinkcard-cc bread" for="bread""></label>
+      </div>
+      </div>
+  </form>
+  </div>
+
+  <div class="col-sm-6" id="right">
+
+
+
+    <div class="row" id="results">
+    <p>You have chosen the following ingredients: {{ ingredients }}</p>
+  
+
+      <div class="row">
+      <p>Here are your recipes:</p> 
+
+      <div class="row">
+
+      <div class="recipediv">
+      <h3>{{ title1 }}</h3>
+      <a href="{{link1}}" target="_blank"><img class="img-rounded recipepic" src="{{image1}}"></a>
+      </div>
+
+      <form action="/save1" method="post" target="_blank" name="form3" id="form3">
+        <input type="text" name="save1" value="{{ save1 }}">
+      </form>
+        <input class="green-button" type="submit" value="Save this recipe!" form="form3" />
+      
+      </div>
+
+
+      <div class="row">
+
+      <div class="recipediv">
+      <h3>{{ title2 }}</h3>
+      <a href="{{link2}}" target="_blank"><img class="img-rounded recipepic" src="{{image2}}"></a>
+      </div>
+
+
+      <form action="/save2" method="post" target="_blank" name="form4">
+        <input type="text" name="save2" value="{{ save2 }}">
+      </form>
+        <input class="green-button" type="submit" value="Save this recipe!" form="form4" />
+
+      </div>
+
+      <div class="row">
+      <div class="recipediv">
+      <h3>{{ title3 }}</h3>
+      <a href="{{link3}}" target="_blank"><img class="img-rounded recipepic" src="{{image3}}"></a>
+      </div>
+
+      <form action="/save3" method="post" target="_blank" name="form5">
+        <input type="text" name="save3" value="{{ save3 }}">
+      </form>
+        <input class="green-button" type="submit" value="Save this recipe!" form="form5" />
+      </div>
+
+      <div class="row">
+      <div class="recipediv">
+      <h3>{{ title4 }}</h3>
+      <a href="{{link4}}" target="_blank"><img class="img-rounded recipepic" src="{{image4}}"></a>
+      </div>
+
+      <form action="/save4" method="post" target="_blank" name="form6">
+        <input type="text" name="save4" value="{{ save4 }}">
+      </form>
+        <input class="green-button" type="submit" value="Save this recipe!" form="form6" />
+      </div>
+    <!--<form action="/save" method="post" id="form2">
+      <input type="submit" id="submit2" name="openusername" value="Save recipes, and let me check out my own profile!" form="form2" />
+    </form>-->
+    
+    <div class="row">
+    <button class="red-button" onclick="news()">Start a new search! </button>
+    </div>
+
+    </div>
+
+    </div>
+
+    <div class="row" id="newsearch">
+      <p>Choose a number of ingredients from the list on the left, then click Submit when you are happy with your choices!</p>
+      <div class="row">
+            <input id="totallist" type="text" name="totallist" form="form1" />
+            <button class="green-button" type="button" id="clearout" onclick="clearout()">I don't like these choices</button>
+            <input class="red-button" type="submit" id="submit" value="Submit" form="form1" />
+        </div>
+    </div>
+      
+
+  </div>
+</div>
+</div>
+
+ 
+{% endblock %}

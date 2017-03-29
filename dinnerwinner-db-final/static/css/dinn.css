@@ -1,0 +1,143 @@
+
+        body {
+          background-color: #ff8c1a;
+          color: #ffffff;
+          text-shadow: 1px 1px #444;
+          font-size: 14pt;
+          padding-top: 70px;
+        }
+
+        a {
+          color: #ffffff;
+        }
+
+        .container {
+          padding-top: 50px;
+        }
+
+        #login {
+          font-size: 14px;
+        }
+
+        #personal-page {
+          padding-top: 50px;
+        }
+        
+        h2 {
+          font-size: 14px;
+        }
+
+        #choose {
+          padding-top: 20px;
+        }
+
+        #main {
+          display: none;
+        }
+
+        #newsearch {
+          display: none;
+        }
+
+        .green-button {
+          border-top: none;
+          border-right: none;
+          border-bottom: none;
+          border-left: 6px solid #ad0057;
+          background-color: #ff8c1a;
+        }
+
+        .red-button {
+          border-bottom: none;
+          border-top: none;
+          border-left: 6px solid #009999;
+          border-right: none;
+          background-color: #ff8c1a;
+        }
+        
+        #email {
+          background-color: #00e2e6;
+          border-color: #007d80;
+        }
+
+        .fancy-title {
+          font-family: 'PT Sans Narrow', sans-serif;
+        }
+
+        #open {
+          color: #444;
+          text-shadow: #445;
+          min-height: 250px;
+        }
+
+        .recipepic {
+          height: 180px;
+        }
+
+        .navbar {
+          background-color: #ff8c1a;
+          color: #ffffff;
+          text-shadow: 1px 1px #444;
+          font-size: 16pt;
+        }
+
+        .navbar-fixed-top {
+          float: none;
+          margin: 0 auto;
+          display: block;
+          text-align: center;
+        }
+
+        form {
+          color: #000000;
+        }
+
+
+        footer {
+          font-size: 14px;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 20px;
+        }
+
+        .cc-selector input{
+            margin:0;padding:0;
+            -webkit-appearance:none;
+               -moz-appearance:none;
+                    appearance:none;
+        }
+
+        .visa{background-image:url('../img/chicken.svg');}
+        .mastercard{background-image:url('../img/cow.png');}
+        .lloyds{background-image:url('../img/pig.png');}
+        .hsbc{background-image:url('../img/brocolli.png');}
+        .rbs{background-image:url('../img/mushroom.png');}
+        .cheese{background-image:url('../img/pepper.png');}
+        .ham{background-image:url('../img/cheese.png');}
+        .mayo{background-image:url('../img/milk.png');}
+        .bread{background-image:url('../img/eggs.png');}
+
+        .cc-selector-2 input:active +.drinkcard-cc, .cc-selector input:active +.drinkcard-cc{opacity: .9;}
+        .cc-selector-2 input:checked +.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc{
+            -webkit-filter: none;
+               -moz-filter: none;
+                    filter: none;
+        }
+        .drinkcard-cc{
+            cursor:pointer;
+            background-size:contain;
+            background-repeat:no-repeat;
+            display:inline-block;
+            width:100px;height:70px;
+            -webkit-transition: all 100ms ease-in;
+               -moz-transition: all 100ms ease-in;
+                    transition: all 100ms ease-in;
+            -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+               -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+                    filter: brightness(1.8) grayscale(1) opacity(.7);
+        }
+        .drinkcard-cc:hover{
+            -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+               -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+                    filter: brightness(1.2) grayscale(.5) opacity(.9);
+        }

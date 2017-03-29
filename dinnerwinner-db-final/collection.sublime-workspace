@@ -1,0 +1,648 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.py",
+			"settings":
+			{
+				"buffer_size": 8171,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/css/dw.css",
+			"settings":
+			{
+				"buffer_size": 3922,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/javascript/dinnerwinner.js",
+			"settings":
+			{
+				"buffer_size": 901,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/base.html",
+			"settings":
+			{
+				"buffer_size": 2873,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/index.html",
+			"settings":
+			{
+				"buffer_size": 3415,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{% extends \"base.html\" %}\n{% block content %}\n\n<div class=\"container\">\n<div class=\"row\">\n\n  <div class=\"col-sm-6\" id=\"left\">\n  <form action=\"/submit\" method=\"post\" id=\"form1\">\n      <div class=\"cc-selector\">\n      <div class=\"row\">\n          <input id=\"visa\" type=\"checkbox\" name=\"credit\" value=\"chicken\" onclick=\"adding1()\" />\n          <label class=\"drinkcard-cc visa\" for=\"visa\"></label>\n          <input id=\"mastercard\" type=\"checkbox\" name=\"debit\" value=\"beef\" onclick=\"adding2()\" />\n          <label class=\"drinkcard-cc mastercard\" for=\"mastercard\"\"></label>\n          <input id=\"lloyds\" type=\"checkbox\" name=\"d\" value=\"pork\" onclick=\"adding3()\" />\n          <label class=\"drinkcard-cc lloyds\" for=\"lloyds\"\"></label>\n      </div>\n      <div class=\"row\">\n          <input id=\"hsbc\" type=\"checkbox\" name=\"debit\" value=\"broccoli\" onclick=\"adding4()\" />\n          <label class=\"drinkcard-cc hsbc\" for=\"hsbc\"\"></label>\n          <input id=\"rbs\" type=\"checkbox\" name=\"debit\" value=\"mushroom\" onclick=\"adding5()\" />\n          <label class=\"drinkcard-cc rbs\" for=\"rbs\"\"></label>\n          <input id=\"cheese\" type=\"checkbox\" name=\"debit\" value=\"pepper\" onclick=\"adding6()\" />\n          <label class=\"drinkcard-cc cheese\" for=\"cheese\"\"></label>\n      </div>\n      <div class=\"row\">\n          <input id=\"ham\" type=\"checkbox\" name=\"debit\" value=\"cheese\" onclick=\"adding7()\" />\n          <label class=\"drinkcard-cc ham\" for=\"ham\"\"></label>\n          <input id=\"mayo\" type=\"checkbox\" name=\"d\" value=\"milk\" onclick=\"adding8()\" />\n          <label class=\"drinkcard-cc mayo\" for=\"mayo\"\"></label>\n          <input id=\"bread\" type=\"checkbox\" name=\"d\" value=\"eggs\" onclick=\"adding9()\" />\n          <label class=\"drinkcard-cc bread\" for=\"bread\"\"></label>\n      </div>\n      </div>\n  </form>\n  </div>\n\n  <div class=\"col-sm-6\" id=\"right\">\n    <div class=\"row\">\n    <p>You have chosen the following ingredients: {{ ingredients }}</p>\n    </div>\n\n      <div class=\"row\">\n      <p>Here are your recipes:</p> \n\n      <div class=\"row\">\n      <form style=\"display: inline\" action=\"{{link1}}\" method=\"get\" target=\"_blank\">\n      <h3>{{title1}}</h3>\n        <button name=\"recipe1\"><img class=\"recipepic img-circle\" src=\"{{image1}}\"></button>\n      </form>\n      </div>\n      <div class=\"row\">\n      <form style=\"display: inline\" action=\"{{link2}}\" method=\"get\" target=\"_blank\">\n      <h3>{{title2}}</h3> \n        <button name=\"recipe1\"><img class=\"recipepic img-circle\" src=\"{{image2}}\"></button>\n      </form>\n      </div>\n      <div class=\"row\">\n      <form style=\"display: inline\" action=\"{{link3}}\" method=\"get\" target=\"_blank\">\n      <h3>{{title3}}</h3>\n        <button name=\"recipe1\"><img class=\"recipepic img-circle\" src=\"{{image3}}\"></button>\n      </form>\n      </div>\n      <div class=\"row\">\n      <form style=\"display: inline\" action=\"{{link4}}\" method=\"get\" target=\"_blank\">\n      <h4>{{title4}}</h4>\n        <button name=\"recipe1\"><img class=\"recipepic img-circle\" src=\"{{image4}}\"></button>\n      </form>\n      </div>\n    <!--<form action=\"/save\" method=\"post\" id=\"form2\">\n      <input type=\"submit\" id=\"submit2\" name=\"openusername\" value=\"Save recipes, and let me check out my own profile!\" form=\"form2\" />\n    </form>-->\n      <input type=\"submit\" id=\"submit3\" name=\"opensearch\" value=\"Start new search\" form=\"form1\" />\n      <input id=\"totallist\" type=\"text\" name=\"totallist\" form=\"form1\" />\n      </div>\n  </div>\n</div>\n</div>\n\n \n{% endblock %}",
+			"file": "templates/recipes.html",
+			"file_size": 3436,
+			"file_write_time": 131352121100000000,
+			"settings":
+			{
+				"buffer_size": 3437,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/post.html",
+			"settings":
+			{
+				"buffer_size": 152,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/user.html",
+			"settings":
+			{
+				"buffer_size": 1156,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/rabbitroad/Desktop/Coding/dinnerwinner-db-final/static/css/dinnerwinner.css",
+		"/Users/rabbitroad/Desktop/Coding/dinnerwinner-db-final/static/js/dinnerwinner.js",
+		"/Users/rabbitroad/Desktop/Coding/dinnerwinner-db-final/static/images.css",
+		"/Users/rabbitroad/Desktop/Coding/dinnerwinner-db-final/static/images.js",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/giphy1.json",
+		"/Users/rabbitroad/Desktop/Coding/bits/templates/tryingout.html",
+		"/Users/rabbitroad/Desktop/Coding/bits/bits.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/mashape.json",
+		"/Users/rabbitroad/Desktop/Coding/dinnerwinner-db-final/oauth.py",
+		"/Users/rabbitroad/Desktop/Coding/microblog-version-0.12/app/templates/base.html",
+		"/Users/rabbitroad/Desktop/Coding/microblog-version-0.12/app/templates/index.html",
+		"/Users/rabbitroad/Desktop/Coding/dinnerwinner-db-final/app.py",
+		"/Users/rabbitroad/Desktop/Coding/microblog-version-0.9/app/views.py",
+		"/Users/rabbitroad/Desktop/Coding/microblog-version-0.9/app/models.py",
+		"/Users/rabbitroad/Desktop/Coding/microblog-version-0.9/app/forms.py",
+		"/Users/rabbitroad/Desktop/Coding/flask-oauth-example-master/templates/index2.html",
+		"/Users/rabbitroad/Desktop/Coding/flask-oauth-example-master/templates/index.html",
+		"/Users/rabbitroad/Desktop/Coding/flask-oauth-example-master/oauth.py",
+		"/Users/rabbitroad/Desktop/Coding/flask-oauth-example-master/static/js/dinnerwinner.js",
+		"/Users/rabbitroad/Desktop/Coding/flask-oauth-example-master/app.py",
+		"/Users/rabbitroad/Desktop/Coding/flask-oauth-example-master/templates/index 2.html",
+		"/Users/rabbitroad/Desktop/Coding/bits/requirements.txt",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 3/templates/hello.html",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 3/hellohellohello.py",
+		"/Users/rabbitroad/Desktop/whats-for-dinner/js/dinnerwinner.js",
+		"/Users/rabbitroad/Desktop/iovana.github.io-master/reddiment.py",
+		"/Users/rabbitroad/Desktop/Coding/tryingout.html",
+		"/Users/rabbitroad/Desktop/whats-for-dinner/index.html",
+		"/Users/rabbitroad/Desktop/whats-for-dinner/css/dinnerwinner.css",
+		"/Users/rabbitroad/Desktop/sandbox/templates/recipe.html",
+		"/Users/rabbitroad/Desktop/sandbox/app.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/templates/3.html",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/ftcd.py",
+		"/Users/rabbitroad/Desktop/sandbox/static/sand.css",
+		"/Users/rabbitroad/Desktop/sandbox/static/dinnerwinner.js",
+		"/Users/rabbitroad/Desktop/sandbox/templates/index.html",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 3/hellohello.py",
+		"/Users/rabbitroad/Desktop/trying/application.py",
+		"/Users/rabbitroad/Desktop/trying/templates/index.html",
+		"/Users/rabbitroad/Desktop/sandbox/static/sand.js",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/weather.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/giphy.py",
+		"/Users/rabbitroad/Desktop/dinnerwinnerpython/app.py",
+		"/Users/rabbitroad/Desktop/dinnerwinnerpython/config.py",
+		"/Users/rabbitroad/Desktop/dinnerwinnerpython/requirements.txt",
+		"/Users/rabbitroad/Desktop/whats-for-dinner/css/bootstrap.css",
+		"/Users/rabbitroad/Desktop/UCL/PALSG308 Web Programming/summary.html",
+		"/Users/rabbitroad/Desktop/Coding/coding_course/challengeexercise/javascript/javascript.js",
+		"/Users/rabbitroad/Desktop/UCL/PALSG308 Web Programming/results.html",
+		"/Users/rabbitroad/Desktop/whats-for-dinner/css/hover.css",
+		"/Users/rabbitroad/Desktop/Coding/coding_course/challengeexercise/css/main.css",
+		"/Users/rabbitroad/Desktop/Coding/coding_course/challengeexercise/index.html",
+		"/Users/rabbitroad/Desktop/UCL/PALSG308 Web Programming/index.html",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/templates/thanks.html",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/giphy2.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/2.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/1.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 4/files/test.txt",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/week 3/hello.html",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/hello.html",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/hellohellohello.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/hellohello.py",
+		"/Users/rabbitroad/Desktop/Coding/coding_course/first_site/index.html",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/untitled",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/truth.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/class2 notes.txt",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/truefalse.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/functionsreturning.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/functionsvariables.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/functions.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/promptingpassing.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/prompting people.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/questions2.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/questions1.py",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/class2.py",
+		"/Users/rabbitroad/Desktop/UCL/MSc Project fTCD/Language Lateralisation Project",
+		"/Users/rabbitroad/Desktop/Coding/AW 2016 - Python Curriculum/hello.py",
+		"/Users/rabbitroad/Desktop/UCL/MSc Project fTCD/Project description - fTCD Phonological rehearsal.txt",
+		"/Users/rabbitroad/Desktop/UCL/PALSG302 Rehabilitation of Acquired Communication Difficulties/PALSG302: TUTORIAL 1: SCHLAUG 2009 (keywords: whit",
+		"/Users/rabbitroad/Desktop/PALSG308/summary.html",
+		"/Users/rabbitroad/Desktop/PALSG308/experiment.html",
+		"/Users/rabbitroad/Desktop/PALSG308/experiment-dashes.html",
+		"/Users/rabbitroad/Desktop/PALSG308/trythis.html",
+		"/Users/rabbitroad/Desktop/PALSG308/stimuli.html",
+		"/Users/rabbitroad/Desktop/PALSG308/index.html",
+		"/Users/rabbitroad/Desktop/PALSG308/results.html",
+		"/Users/rabbitroad/Desktop/PALSG308/experiment-continuous.html",
+		"/Users/rabbitroad/Desktop/PALSG308/experiment2.html",
+		"/Users/rabbitroad/Desktop/PALSG308/css/main.css",
+		"/Users/rabbitroad/Desktop/PALSG308/index1.html",
+		"/Users/rabbitroad/Desktop/PALSG308/experiment3.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex7-3.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex7-2.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex8-2.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex8-3.html",
+		"/Users/rabbitroad/Desktop/PALSG308/js/bootstrap-toc.js",
+		"/Users/rabbitroad/Desktop/PALSG308/css/bootstrap-toc.css",
+		"/Users/rabbitroad/Desktop/PALSG308/EXPERIMENT.html",
+		"/Users/rabbitroad/Desktop/PALSG308/graphs.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex8-3-1.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex8-1.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex8-2-1.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex7-1.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex6-6.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex6-5.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex6-4.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex6-1-3.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex6-1-2.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex6-1.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex6-2.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex6-3-2.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex6-3.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex5-7.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex5-6.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex5-5.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex5-4.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex5-3.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex5-2.html",
+		"/Users/rabbitroad/Desktop/PALSG308/ex5-1.html",
+		"/Users/rabbitroad/Desktop/PALSG308/mydata.txt",
+		"/Users/rabbitroad/Desktop/you could make a life (sotw).txt",
+		"/Users/rabbitroad/Desktop/challengeexercise/galleryjs/jquery.min3.js",
+		"/Users/rabbitroad/Desktop/challengeexercise/menu.html",
+		"/Users/rabbitroad/Desktop/challengeexercise/index.html",
+		"/Users/rabbitroad/Desktop/challengeexercise/javascript/javascript.js",
+		"/Users/rabbitroad/Desktop/challengeexercise/css/main.css",
+		"/Users/rabbitroad/Desktop/challengeexercise/events.html",
+		"/Users/rabbitroad/Desktop/challengeexercise/feedback.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"100px",
+			"btn-outline-success",
+			";\n",
+			"jpg",
+			";\n",
+			"’",
+			"–",
+			"  stimtab.push({ condition:3, stimulus:[\"",
+			"\"] });",
+			" stimtab.push({ condition:2, stimulus:[\"",
+			"\"] });",
+			"  stimtab.push({ condition:1, stimulus:[\"",
+			"–",
+			"“",
+			"”",
+			"Task",
+			"Grammaticality",
+			"</h1>",
+			"<h1",
+			"\"ex",
+			"ex.",
+			"Exercise ",
+			"<b>",
+			"</i>",
+			"<i>",
+			"</i>",
+			"</b>",
+			"<b>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"-",
+			"",
+			"<br />",
+			"",
+			"-",
+			"\"",
+			"Grammatical",
+			"</h2>",
+			"<h2",
+			"\"exercises/ex",
+			"ex. ",
+			"ex.",
+			"<strong>",
+			"</em>",
+			"</i>",
+			"</strong>",
+			"<strong>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3398,
+								3398
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "static/css/dw.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3922,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2781,
+								2701
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1395.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "static/javascript/dinnerwinner.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3398,
+								3398
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 440.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/recipes.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3409,
+								3409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 554.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "templates/post.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "collection.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
